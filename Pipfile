@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pycheck = "*"
+
+[packages]
+flask = "*"
+flask-cors = "*"
+dnspython = "*"
+db = "*"
+python-dotenv = "*"
+flask-dotenv = "*"
+flask-restful = "*"
+flask-mongoengine = "*"
+pandas = "*"
+
+[requires]
+python_version = "3.9"
