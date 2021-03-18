@@ -9,13 +9,12 @@ pycheck = "*"
 [packages]
 flask = "*"
 flask-cors = "*"
-dnspython = "*"
-db = "*"
 python-dotenv = "*"
-flask-dotenv = "*"
 flask-restful = "*"
 flask-mongoengine = "*"
-pandas = "*"
+werkzeug = "*"
+pyexcel = "*"
+pyexcel-xls = "*"
 
 [requires]
 python_version = "3.9"

@@ -13,9 +13,9 @@ export const fileUploadReducer = (state = {}, action) => {
     case FILE_UPLOAD_REQUEST:
       return { loading: true };
     case FILE_UPLOAD_SUCCESS:
-      return { loading: false, success: true, file: action.payload };
+      return { loading: false, file: action.payload };
     case FILE_UPLOAD_FAIL:
-      return { loading: false, error: action.payload };
+      return { loading: false, success: false, error: action.payload };
     case FILE_UPLOAD_RESET:
       return {};
     default:

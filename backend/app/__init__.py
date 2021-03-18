@@ -1,7 +1,8 @@
 from flask import Flask , request, jsonify
-from flask_restful import Api, Resource
+
 from flask_cors import CORS
 from flask_mongoengine import MongoEngine
+
 #Global accessible library
 # user_collection = mongo.db.users
 
@@ -19,9 +20,8 @@ def create_app():
     }
     })
     app.config.from_pyfile('../config.py')
-    api = Api(app)
   
-
+  
     #Initialize Plugins 
     """Initializing plugins sets global variables makes them 
     globally accesible via other parts of our application """
@@ -30,7 +30,7 @@ def create_app():
 
     with app.app_context(): 
         #Import parts of application 
-        from .home.routes import home_bp
+        from .api.home.routes import home_bp
         from .api.file_handler.routes import file_bp
 
         #Register Blueprints
